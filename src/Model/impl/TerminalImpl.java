@@ -113,7 +113,7 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void statusUsuario() {
+	public void consultaUsuario() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -125,6 +125,28 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
 	 * @generated
 	 */
 	public void consultaExemplar() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void aplicaMulta() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void suspendeUsuario() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -156,11 +178,17 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
 			case ModelPackage.TERMINAL___ATUALIZA_USUARIO:
 				atualizaUsuario();
 				return null;
-			case ModelPackage.TERMINAL___STATUS_USUARIO:
-				statusUsuario();
+			case ModelPackage.TERMINAL___CONSULTA_USUARIO:
+				consultaUsuario();
 				return null;
 			case ModelPackage.TERMINAL___CONSULTA_EXEMPLAR:
 				consultaExemplar();
+				return null;
+			case ModelPackage.TERMINAL___APLICA_MULTA:
+				aplicaMulta();
+				return null;
+			case ModelPackage.TERMINAL___SUSPENDE_USUARIO:
+				suspendeUsuario();
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

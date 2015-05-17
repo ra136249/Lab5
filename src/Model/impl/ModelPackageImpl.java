@@ -205,7 +205,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__StatusUsuario() {
+	public EOperation getTerminal__ConsultaUsuario() {
 		return terminalEClass.getEOperations().get(6);
 	}
 
@@ -216,6 +216,24 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 */
 	public EOperation getTerminal__ConsultaExemplar() {
 		return terminalEClass.getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTerminal__AplicaMulta() {
+		return terminalEClass.getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTerminal__SuspendeUsuario() {
+		return terminalEClass.getEOperations().get(9);
 	}
 
 	/**
@@ -349,6 +367,150 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getUsuario_PrimeiroNome() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_UltimoNome() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_DataNascimento() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_Email() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_Cpf() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_Telefone() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_Endereco1() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_Endereco2() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_Cidade() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_Estado() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_Pais() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUsuario_Cep() {
+		return (EAttribute)usuarioEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getUsuario__Reserva() {
+		return usuarioEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getUsuario__Empresta() {
+		return usuarioEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getUsuario__Devolve() {
+		return usuarioEClass.getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getUsuario__RetornaConsulta() {
+		return usuarioEClass.getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAluno() {
 		return alunoEClass;
 	}
@@ -406,8 +568,10 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEOperation(terminalEClass, TERMINAL___CADASTRA_USUARIO);
 		createEOperation(terminalEClass, TERMINAL___REMOVE_USUARIO);
 		createEOperation(terminalEClass, TERMINAL___ATUALIZA_USUARIO);
-		createEOperation(terminalEClass, TERMINAL___STATUS_USUARIO);
+		createEOperation(terminalEClass, TERMINAL___CONSULTA_USUARIO);
 		createEOperation(terminalEClass, TERMINAL___CONSULTA_EXEMPLAR);
+		createEOperation(terminalEClass, TERMINAL___APLICA_MULTA);
+		createEOperation(terminalEClass, TERMINAL___SUSPENDE_USUARIO);
 
 		exemplarEClass = createEClass(EXEMPLAR);
 		createEAttribute(exemplarEClass, EXEMPLAR__NOME);
@@ -424,6 +588,22 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEOperation(exemplarEClass, EXEMPLAR___DEVOLVE_EXEMPLAR);
 
 		usuarioEClass = createEClass(USUARIO);
+		createEAttribute(usuarioEClass, USUARIO__PRIMEIRO_NOME);
+		createEAttribute(usuarioEClass, USUARIO__ULTIMO_NOME);
+		createEAttribute(usuarioEClass, USUARIO__DATA_NASCIMENTO);
+		createEAttribute(usuarioEClass, USUARIO__EMAIL);
+		createEAttribute(usuarioEClass, USUARIO__CPF);
+		createEAttribute(usuarioEClass, USUARIO__TELEFONE);
+		createEAttribute(usuarioEClass, USUARIO__ENDERECO1);
+		createEAttribute(usuarioEClass, USUARIO__ENDERECO2);
+		createEAttribute(usuarioEClass, USUARIO__CIDADE);
+		createEAttribute(usuarioEClass, USUARIO__ESTADO);
+		createEAttribute(usuarioEClass, USUARIO__PAIS);
+		createEAttribute(usuarioEClass, USUARIO__CEP);
+		createEOperation(usuarioEClass, USUARIO___RESERVA);
+		createEOperation(usuarioEClass, USUARIO___EMPRESTA);
+		createEOperation(usuarioEClass, USUARIO___DEVOLVE);
+		createEOperation(usuarioEClass, USUARIO___RETORNA_CONSULTA);
 
 		alunoEClass = createEClass(ALUNO);
 
@@ -482,9 +662,13 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 
 		initEOperation(getTerminal__AtualizaUsuario(), null, "atualizaUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__StatusUsuario(), null, "statusUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getTerminal__ConsultaUsuario(), null, "consultaUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEOperation(getTerminal__ConsultaExemplar(), null, "consultaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getTerminal__AplicaMulta(), null, "aplicaMulta", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getTerminal__SuspendeUsuario(), null, "suspendeUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(exemplarEClass, Exemplar.class, "Exemplar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getExemplar_Nome(), theTypesPackage.getString(), "nome", null, 1, 1, Exemplar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -507,6 +691,26 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEOperation(getExemplar__DevolveExemplar(), null, "devolveExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(usuarioEClass, Usuario.class, "Usuario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUsuario_PrimeiroNome(), theTypesPackage.getString(), "primeiroNome", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_UltimoNome(), theTypesPackage.getString(), "ultimoNome", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_DataNascimento(), theTypesPackage.getString(), "dataNascimento", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_Email(), theTypesPackage.getString(), "email", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_Cpf(), theTypesPackage.getString(), "cpf", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_Telefone(), theTypesPackage.getString(), "telefone", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_Endereco1(), theTypesPackage.getString(), "endereco1", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_Endereco2(), theTypesPackage.getString(), "endereco2", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_Cidade(), theTypesPackage.getString(), "cidade", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_Estado(), theTypesPackage.getString(), "estado", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_Pais(), theTypesPackage.getString(), "pais", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getUsuario_Cep(), theTypesPackage.getString(), "cep", null, 1, 1, Usuario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEOperation(getUsuario__Reserva(), null, "reserva", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getUsuario__Empresta(), null, "empresta", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getUsuario__Devolve(), null, "devolve", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getUsuario__RetornaConsulta(), null, "retornaConsulta", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(alunoEClass, Aluno.class, "Aluno", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

@@ -69,7 +69,7 @@ public interface Terminal extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void statusUsuario();
+	void consultaUsuario();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,5 +78,21 @@ public interface Terminal extends EObject {
 	 * @generated
 	 */
 	void consultaExemplar();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void aplicaMulta();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void suspendeUsuario();
 
 } // Terminal

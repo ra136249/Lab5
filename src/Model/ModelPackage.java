@@ -130,13 +130,13 @@ public interface ModelPackage extends EPackage {
 	int TERMINAL___ATUALIZA_USUARIO = 5;
 
 	/**
-	 * The operation id for the '<em>Status Usuario</em>' operation.
+	 * The operation id for the '<em>Consulta Usuario</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___STATUS_USUARIO = 6;
+	int TERMINAL___CONSULTA_USUARIO = 6;
 
 	/**
 	 * The operation id for the '<em>Consulta Exemplar</em>' operation.
@@ -148,13 +148,31 @@ public interface ModelPackage extends EPackage {
 	int TERMINAL___CONSULTA_EXEMPLAR = 7;
 
 	/**
+	 * The operation id for the '<em>Aplica Multa</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINAL___APLICA_MULTA = 8;
+
+	/**
+	 * The operation id for the '<em>Suspende Usuario</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINAL___SUSPENDE_USUARIO = 9;
+
+	/**
 	 * The number of operations of the '<em>Terminal</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL_OPERATION_COUNT = 8;
+	int TERMINAL_OPERATION_COUNT = 10;
 
 	/**
 	 * The meta object id for the '{@link Model.impl.ExemplarImpl <em>Exemplar</em>}' class.
@@ -303,13 +321,157 @@ public interface ModelPackage extends EPackage {
 	int USUARIO = 2;
 
 	/**
+	 * The feature id for the '<em><b>Primeiro Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__PRIMEIRO_NOME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Ultimo Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__ULTIMO_NOME = 1;
+
+	/**
+	 * The feature id for the '<em><b>Data Nascimento</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__DATA_NASCIMENTO = 2;
+
+	/**
+	 * The feature id for the '<em><b>Email</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__EMAIL = 3;
+
+	/**
+	 * The feature id for the '<em><b>Cpf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__CPF = 4;
+
+	/**
+	 * The feature id for the '<em><b>Telefone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__TELEFONE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Endereco1</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__ENDERECO1 = 6;
+
+	/**
+	 * The feature id for the '<em><b>Endereco2</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__ENDERECO2 = 7;
+
+	/**
+	 * The feature id for the '<em><b>Cidade</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__CIDADE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Estado</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__ESTADO = 9;
+
+	/**
+	 * The feature id for the '<em><b>Pais</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__PAIS = 10;
+
+	/**
+	 * The feature id for the '<em><b>Cep</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO__CEP = 11;
+
+	/**
 	 * The number of structural features of the '<em>Usuario</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USUARIO_FEATURE_COUNT = 0;
+	int USUARIO_FEATURE_COUNT = 12;
+
+	/**
+	 * The operation id for the '<em>Reserva</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO___RESERVA = 0;
+
+	/**
+	 * The operation id for the '<em>Empresta</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO___EMPRESTA = 1;
+
+	/**
+	 * The operation id for the '<em>Devolve</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO___DEVOLVE = 2;
+
+	/**
+	 * The operation id for the '<em>Retorna Consulta</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USUARIO___RETORNA_CONSULTA = 3;
 
 	/**
 	 * The number of operations of the '<em>Usuario</em>' class.
@@ -318,7 +480,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USUARIO_OPERATION_COUNT = 0;
+	int USUARIO_OPERATION_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link Model.impl.AlunoImpl <em>Aluno</em>}' class.
@@ -331,6 +493,114 @@ public interface ModelPackage extends EPackage {
 	int ALUNO = 3;
 
 	/**
+	 * The feature id for the '<em><b>Primeiro Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__PRIMEIRO_NOME = USUARIO__PRIMEIRO_NOME;
+
+	/**
+	 * The feature id for the '<em><b>Ultimo Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__ULTIMO_NOME = USUARIO__ULTIMO_NOME;
+
+	/**
+	 * The feature id for the '<em><b>Data Nascimento</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__DATA_NASCIMENTO = USUARIO__DATA_NASCIMENTO;
+
+	/**
+	 * The feature id for the '<em><b>Email</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__EMAIL = USUARIO__EMAIL;
+
+	/**
+	 * The feature id for the '<em><b>Cpf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__CPF = USUARIO__CPF;
+
+	/**
+	 * The feature id for the '<em><b>Telefone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__TELEFONE = USUARIO__TELEFONE;
+
+	/**
+	 * The feature id for the '<em><b>Endereco1</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__ENDERECO1 = USUARIO__ENDERECO1;
+
+	/**
+	 * The feature id for the '<em><b>Endereco2</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__ENDERECO2 = USUARIO__ENDERECO2;
+
+	/**
+	 * The feature id for the '<em><b>Cidade</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__CIDADE = USUARIO__CIDADE;
+
+	/**
+	 * The feature id for the '<em><b>Estado</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__ESTADO = USUARIO__ESTADO;
+
+	/**
+	 * The feature id for the '<em><b>Pais</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__PAIS = USUARIO__PAIS;
+
+	/**
+	 * The feature id for the '<em><b>Cep</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__CEP = USUARIO__CEP;
+
+	/**
 	 * The number of structural features of the '<em>Aluno</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -338,6 +608,42 @@ public interface ModelPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALUNO_FEATURE_COUNT = USUARIO_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Reserva</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO___RESERVA = USUARIO___RESERVA;
+
+	/**
+	 * The operation id for the '<em>Empresta</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO___EMPRESTA = USUARIO___EMPRESTA;
+
+	/**
+	 * The operation id for the '<em>Devolve</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO___DEVOLVE = USUARIO___DEVOLVE;
+
+	/**
+	 * The operation id for the '<em>Retorna Consulta</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO___RETORNA_CONSULTA = USUARIO___RETORNA_CONSULTA;
 
 	/**
 	 * The number of operations of the '<em>Aluno</em>' class.
@@ -359,6 +665,114 @@ public interface ModelPackage extends EPackage {
 	int PROFESSOR = 4;
 
 	/**
+	 * The feature id for the '<em><b>Primeiro Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__PRIMEIRO_NOME = USUARIO__PRIMEIRO_NOME;
+
+	/**
+	 * The feature id for the '<em><b>Ultimo Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__ULTIMO_NOME = USUARIO__ULTIMO_NOME;
+
+	/**
+	 * The feature id for the '<em><b>Data Nascimento</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__DATA_NASCIMENTO = USUARIO__DATA_NASCIMENTO;
+
+	/**
+	 * The feature id for the '<em><b>Email</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__EMAIL = USUARIO__EMAIL;
+
+	/**
+	 * The feature id for the '<em><b>Cpf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__CPF = USUARIO__CPF;
+
+	/**
+	 * The feature id for the '<em><b>Telefone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__TELEFONE = USUARIO__TELEFONE;
+
+	/**
+	 * The feature id for the '<em><b>Endereco1</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__ENDERECO1 = USUARIO__ENDERECO1;
+
+	/**
+	 * The feature id for the '<em><b>Endereco2</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__ENDERECO2 = USUARIO__ENDERECO2;
+
+	/**
+	 * The feature id for the '<em><b>Cidade</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__CIDADE = USUARIO__CIDADE;
+
+	/**
+	 * The feature id for the '<em><b>Estado</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__ESTADO = USUARIO__ESTADO;
+
+	/**
+	 * The feature id for the '<em><b>Pais</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__PAIS = USUARIO__PAIS;
+
+	/**
+	 * The feature id for the '<em><b>Cep</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__CEP = USUARIO__CEP;
+
+	/**
 	 * The number of structural features of the '<em>Professor</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -366,6 +780,42 @@ public interface ModelPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROFESSOR_FEATURE_COUNT = USUARIO_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Reserva</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR___RESERVA = USUARIO___RESERVA;
+
+	/**
+	 * The operation id for the '<em>Empresta</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR___EMPRESTA = USUARIO___EMPRESTA;
+
+	/**
+	 * The operation id for the '<em>Devolve</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR___DEVOLVE = USUARIO___DEVOLVE;
+
+	/**
+	 * The operation id for the '<em>Retorna Consulta</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR___RETORNA_CONSULTA = USUARIO___RETORNA_CONSULTA;
 
 	/**
 	 * The number of operations of the '<em>Professor</em>' class.
@@ -387,6 +837,114 @@ public interface ModelPackage extends EPackage {
 	int FUNCIONARIO = 5;
 
 	/**
+	 * The feature id for the '<em><b>Primeiro Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__PRIMEIRO_NOME = USUARIO__PRIMEIRO_NOME;
+
+	/**
+	 * The feature id for the '<em><b>Ultimo Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__ULTIMO_NOME = USUARIO__ULTIMO_NOME;
+
+	/**
+	 * The feature id for the '<em><b>Data Nascimento</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__DATA_NASCIMENTO = USUARIO__DATA_NASCIMENTO;
+
+	/**
+	 * The feature id for the '<em><b>Email</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__EMAIL = USUARIO__EMAIL;
+
+	/**
+	 * The feature id for the '<em><b>Cpf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__CPF = USUARIO__CPF;
+
+	/**
+	 * The feature id for the '<em><b>Telefone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__TELEFONE = USUARIO__TELEFONE;
+
+	/**
+	 * The feature id for the '<em><b>Endereco1</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__ENDERECO1 = USUARIO__ENDERECO1;
+
+	/**
+	 * The feature id for the '<em><b>Endereco2</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__ENDERECO2 = USUARIO__ENDERECO2;
+
+	/**
+	 * The feature id for the '<em><b>Cidade</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__CIDADE = USUARIO__CIDADE;
+
+	/**
+	 * The feature id for the '<em><b>Estado</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__ESTADO = USUARIO__ESTADO;
+
+	/**
+	 * The feature id for the '<em><b>Pais</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__PAIS = USUARIO__PAIS;
+
+	/**
+	 * The feature id for the '<em><b>Cep</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__CEP = USUARIO__CEP;
+
+	/**
 	 * The number of structural features of the '<em>Funcionario</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -394,6 +952,42 @@ public interface ModelPackage extends EPackage {
 	 * @ordered
 	 */
 	int FUNCIONARIO_FEATURE_COUNT = USUARIO_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Reserva</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO___RESERVA = USUARIO___RESERVA;
+
+	/**
+	 * The operation id for the '<em>Empresta</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO___EMPRESTA = USUARIO___EMPRESTA;
+
+	/**
+	 * The operation id for the '<em>Devolve</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO___DEVOLVE = USUARIO___DEVOLVE;
+
+	/**
+	 * The operation id for the '<em>Retorna Consulta</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO___RETORNA_CONSULTA = USUARIO___RETORNA_CONSULTA;
 
 	/**
 	 * The number of operations of the '<em>Funcionario</em>' class.
@@ -476,14 +1070,14 @@ public interface ModelPackage extends EPackage {
 	EOperation getTerminal__AtualizaUsuario();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#statusUsuario() <em>Status Usuario</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Terminal#consultaUsuario() <em>Consulta Usuario</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Status Usuario</em>' operation.
-	 * @see Model.Terminal#statusUsuario()
+	 * @return the meta object for the '<em>Consulta Usuario</em>' operation.
+	 * @see Model.Terminal#consultaUsuario()
 	 * @generated
 	 */
-	EOperation getTerminal__StatusUsuario();
+	EOperation getTerminal__ConsultaUsuario();
 
 	/**
 	 * Returns the meta object for the '{@link Model.Terminal#consultaExemplar() <em>Consulta Exemplar</em>}' operation.
@@ -494,6 +1088,26 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getTerminal__ConsultaExemplar();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Terminal#aplicaMulta() <em>Aplica Multa</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Aplica Multa</em>' operation.
+	 * @see Model.Terminal#aplicaMulta()
+	 * @generated
+	 */
+	EOperation getTerminal__AplicaMulta();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Terminal#suspendeUsuario() <em>Suspende Usuario</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Suspende Usuario</em>' operation.
+	 * @see Model.Terminal#suspendeUsuario()
+	 * @generated
+	 */
+	EOperation getTerminal__SuspendeUsuario();
 
 	/**
 	 * Returns the meta object for class '{@link Model.Exemplar <em>Exemplar</em>}'.
@@ -642,6 +1256,178 @@ public interface ModelPackage extends EPackage {
 	EClass getUsuario();
 
 	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getPrimeiroNome <em>Primeiro Nome</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Primeiro Nome</em>'.
+	 * @see Model.Usuario#getPrimeiroNome()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_PrimeiroNome();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getUltimoNome <em>Ultimo Nome</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ultimo Nome</em>'.
+	 * @see Model.Usuario#getUltimoNome()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_UltimoNome();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getDataNascimento <em>Data Nascimento</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Data Nascimento</em>'.
+	 * @see Model.Usuario#getDataNascimento()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_DataNascimento();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getEmail <em>Email</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email</em>'.
+	 * @see Model.Usuario#getEmail()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_Email();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getCpf <em>Cpf</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cpf</em>'.
+	 * @see Model.Usuario#getCpf()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_Cpf();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getTelefone <em>Telefone</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Telefone</em>'.
+	 * @see Model.Usuario#getTelefone()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_Telefone();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getEndereco1 <em>Endereco1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endereco1</em>'.
+	 * @see Model.Usuario#getEndereco1()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_Endereco1();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getEndereco2 <em>Endereco2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endereco2</em>'.
+	 * @see Model.Usuario#getEndereco2()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_Endereco2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getCidade <em>Cidade</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cidade</em>'.
+	 * @see Model.Usuario#getCidade()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_Cidade();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getEstado <em>Estado</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Estado</em>'.
+	 * @see Model.Usuario#getEstado()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_Estado();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getPais <em>Pais</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Pais</em>'.
+	 * @see Model.Usuario#getPais()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_Pais();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Usuario#getCep <em>Cep</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cep</em>'.
+	 * @see Model.Usuario#getCep()
+	 * @see #getUsuario()
+	 * @generated
+	 */
+	EAttribute getUsuario_Cep();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Usuario#reserva() <em>Reserva</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Reserva</em>' operation.
+	 * @see Model.Usuario#reserva()
+	 * @generated
+	 */
+	EOperation getUsuario__Reserva();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Usuario#empresta() <em>Empresta</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Empresta</em>' operation.
+	 * @see Model.Usuario#empresta()
+	 * @generated
+	 */
+	EOperation getUsuario__Empresta();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Usuario#devolve() <em>Devolve</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Devolve</em>' operation.
+	 * @see Model.Usuario#devolve()
+	 * @generated
+	 */
+	EOperation getUsuario__Devolve();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Usuario#retornaConsulta() <em>Retorna Consulta</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Retorna Consulta</em>' operation.
+	 * @see Model.Usuario#retornaConsulta()
+	 * @generated
+	 */
+	EOperation getUsuario__RetornaConsulta();
+
+	/**
 	 * Returns the meta object for class '{@link Model.Aluno <em>Aluno</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -753,12 +1539,12 @@ public interface ModelPackage extends EPackage {
 		EOperation TERMINAL___ATUALIZA_USUARIO = eINSTANCE.getTerminal__AtualizaUsuario();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Usuario</b></em>' operation.
+		 * The meta object literal for the '<em><b>Consulta Usuario</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___STATUS_USUARIO = eINSTANCE.getTerminal__StatusUsuario();
+		EOperation TERMINAL___CONSULTA_USUARIO = eINSTANCE.getTerminal__ConsultaUsuario();
 
 		/**
 		 * The meta object literal for the '<em><b>Consulta Exemplar</b></em>' operation.
@@ -767,6 +1553,22 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation TERMINAL___CONSULTA_EXEMPLAR = eINSTANCE.getTerminal__ConsultaExemplar();
+
+		/**
+		 * The meta object literal for the '<em><b>Aplica Multa</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation TERMINAL___APLICA_MULTA = eINSTANCE.getTerminal__AplicaMulta();
+
+		/**
+		 * The meta object literal for the '<em><b>Suspende Usuario</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation TERMINAL___SUSPENDE_USUARIO = eINSTANCE.getTerminal__SuspendeUsuario();
 
 		/**
 		 * The meta object literal for the '{@link Model.impl.ExemplarImpl <em>Exemplar</em>}' class.
@@ -883,6 +1685,134 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EClass USUARIO = eINSTANCE.getUsuario();
+
+		/**
+		 * The meta object literal for the '<em><b>Primeiro Nome</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__PRIMEIRO_NOME = eINSTANCE.getUsuario_PrimeiroNome();
+
+		/**
+		 * The meta object literal for the '<em><b>Ultimo Nome</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__ULTIMO_NOME = eINSTANCE.getUsuario_UltimoNome();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Nascimento</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__DATA_NASCIMENTO = eINSTANCE.getUsuario_DataNascimento();
+
+		/**
+		 * The meta object literal for the '<em><b>Email</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__EMAIL = eINSTANCE.getUsuario_Email();
+
+		/**
+		 * The meta object literal for the '<em><b>Cpf</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__CPF = eINSTANCE.getUsuario_Cpf();
+
+		/**
+		 * The meta object literal for the '<em><b>Telefone</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__TELEFONE = eINSTANCE.getUsuario_Telefone();
+
+		/**
+		 * The meta object literal for the '<em><b>Endereco1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__ENDERECO1 = eINSTANCE.getUsuario_Endereco1();
+
+		/**
+		 * The meta object literal for the '<em><b>Endereco2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__ENDERECO2 = eINSTANCE.getUsuario_Endereco2();
+
+		/**
+		 * The meta object literal for the '<em><b>Cidade</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__CIDADE = eINSTANCE.getUsuario_Cidade();
+
+		/**
+		 * The meta object literal for the '<em><b>Estado</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__ESTADO = eINSTANCE.getUsuario_Estado();
+
+		/**
+		 * The meta object literal for the '<em><b>Pais</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__PAIS = eINSTANCE.getUsuario_Pais();
+
+		/**
+		 * The meta object literal for the '<em><b>Cep</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USUARIO__CEP = eINSTANCE.getUsuario_Cep();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserva</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation USUARIO___RESERVA = eINSTANCE.getUsuario__Reserva();
+
+		/**
+		 * The meta object literal for the '<em><b>Empresta</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation USUARIO___EMPRESTA = eINSTANCE.getUsuario__Empresta();
+
+		/**
+		 * The meta object literal for the '<em><b>Devolve</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation USUARIO___DEVOLVE = eINSTANCE.getUsuario__Devolve();
+
+		/**
+		 * The meta object literal for the '<em><b>Retorna Consulta</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation USUARIO___RETORNA_CONSULTA = eINSTANCE.getUsuario__RetornaConsulta();
 
 		/**
 		 * The meta object literal for the '{@link Model.impl.AlunoImpl <em>Aluno</em>}' class.

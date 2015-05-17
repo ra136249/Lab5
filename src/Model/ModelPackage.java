@@ -601,13 +601,40 @@ public interface ModelPackage extends EPackage {
 	int ALUNO__CEP = USUARIO__CEP;
 
 	/**
+	 * The feature id for the '<em><b>Curso</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__CURSO = USUARIO_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Registro Academico</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__REGISTRO_ACADEMICO = USUARIO_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Status Suspensao</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO__STATUS_SUSPENSAO = USUARIO_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Aluno</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ALUNO_FEATURE_COUNT = USUARIO_FEATURE_COUNT + 0;
+	int ALUNO_FEATURE_COUNT = USUARIO_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Reserva</em>' operation.
@@ -646,13 +673,22 @@ public interface ModelPackage extends EPackage {
 	int ALUNO___RETORNA_CONSULTA = USUARIO___RETORNA_CONSULTA;
 
 	/**
+	 * The operation id for the '<em>Pagar Multa</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALUNO___PAGAR_MULTA = USUARIO_OPERATION_COUNT + 0;
+
+	/**
 	 * The number of operations of the '<em>Aluno</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ALUNO_OPERATION_COUNT = USUARIO_OPERATION_COUNT + 0;
+	int ALUNO_OPERATION_COUNT = USUARIO_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link Model.impl.ProfessorImpl <em>Professor</em>}' class.
@@ -773,13 +809,31 @@ public interface ModelPackage extends EPackage {
 	int PROFESSOR__CEP = USUARIO__CEP;
 
 	/**
+	 * The feature id for the '<em><b>Unidade</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__UNIDADE = USUARIO_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Registro Funcional</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR__REGISTRO_FUNCIONAL = USUARIO_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Professor</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROFESSOR_FEATURE_COUNT = USUARIO_FEATURE_COUNT + 0;
+	int PROFESSOR_FEATURE_COUNT = USUARIO_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Reserva</em>' operation.
@@ -818,13 +872,31 @@ public interface ModelPackage extends EPackage {
 	int PROFESSOR___RETORNA_CONSULTA = USUARIO___RETORNA_CONSULTA;
 
 	/**
+	 * The operation id for the '<em>Bloquear</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR___BLOQUEAR = USUARIO_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Desbloquear</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFESSOR___DESBLOQUEAR = USUARIO_OPERATION_COUNT + 1;
+
+	/**
 	 * The number of operations of the '<em>Professor</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROFESSOR_OPERATION_COUNT = USUARIO_OPERATION_COUNT + 0;
+	int PROFESSOR_OPERATION_COUNT = USUARIO_OPERATION_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link Model.impl.FuncionarioImpl <em>Funcionario</em>}' class.
@@ -945,13 +1017,40 @@ public interface ModelPackage extends EPackage {
 	int FUNCIONARIO__CEP = USUARIO__CEP;
 
 	/**
+	 * The feature id for the '<em><b>Unidade</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__UNIDADE = USUARIO_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Registro Funcional</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__REGISTRO_FUNCIONAL = USUARIO_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Status Suspensao</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO__STATUS_SUSPENSAO = USUARIO_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Funcionario</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FUNCIONARIO_FEATURE_COUNT = USUARIO_FEATURE_COUNT + 0;
+	int FUNCIONARIO_FEATURE_COUNT = USUARIO_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Reserva</em>' operation.
@@ -990,13 +1089,22 @@ public interface ModelPackage extends EPackage {
 	int FUNCIONARIO___RETORNA_CONSULTA = USUARIO___RETORNA_CONSULTA;
 
 	/**
+	 * The operation id for the '<em>Pagar Multa</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCIONARIO___PAGAR_MULTA = USUARIO_OPERATION_COUNT + 0;
+
+	/**
 	 * The number of operations of the '<em>Funcionario</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FUNCIONARIO_OPERATION_COUNT = USUARIO_OPERATION_COUNT + 0;
+	int FUNCIONARIO_OPERATION_COUNT = USUARIO_OPERATION_COUNT + 1;
 
 
 	/**
@@ -1438,6 +1546,49 @@ public interface ModelPackage extends EPackage {
 	EClass getAluno();
 
 	/**
+	 * Returns the meta object for the attribute '{@link Model.Aluno#getCurso <em>Curso</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Curso</em>'.
+	 * @see Model.Aluno#getCurso()
+	 * @see #getAluno()
+	 * @generated
+	 */
+	EAttribute getAluno_Curso();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Aluno#getRegistroAcademico <em>Registro Academico</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Registro Academico</em>'.
+	 * @see Model.Aluno#getRegistroAcademico()
+	 * @see #getAluno()
+	 * @generated
+	 */
+	EAttribute getAluno_RegistroAcademico();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Aluno#isStatusSuspensao <em>Status Suspensao</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Status Suspensao</em>'.
+	 * @see Model.Aluno#isStatusSuspensao()
+	 * @see #getAluno()
+	 * @generated
+	 */
+	EAttribute getAluno_StatusSuspensao();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Aluno#pagarMulta() <em>Pagar Multa</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Pagar Multa</em>' operation.
+	 * @see Model.Aluno#pagarMulta()
+	 * @generated
+	 */
+	EOperation getAluno__PagarMulta();
+
+	/**
 	 * Returns the meta object for class '{@link Model.Professor <em>Professor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1448,6 +1599,48 @@ public interface ModelPackage extends EPackage {
 	EClass getProfessor();
 
 	/**
+	 * Returns the meta object for the attribute '{@link Model.Professor#getUnidade <em>Unidade</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Unidade</em>'.
+	 * @see Model.Professor#getUnidade()
+	 * @see #getProfessor()
+	 * @generated
+	 */
+	EAttribute getProfessor_Unidade();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Professor#getRegistroFuncional <em>Registro Funcional</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Registro Funcional</em>'.
+	 * @see Model.Professor#getRegistroFuncional()
+	 * @see #getProfessor()
+	 * @generated
+	 */
+	EAttribute getProfessor_RegistroFuncional();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Professor#bloquear() <em>Bloquear</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Bloquear</em>' operation.
+	 * @see Model.Professor#bloquear()
+	 * @generated
+	 */
+	EOperation getProfessor__Bloquear();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Professor#desbloquear() <em>Desbloquear</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Desbloquear</em>' operation.
+	 * @see Model.Professor#desbloquear()
+	 * @generated
+	 */
+	EOperation getProfessor__Desbloquear();
+
+	/**
 	 * Returns the meta object for class '{@link Model.Funcionario <em>Funcionario</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1456,6 +1649,49 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFuncionario();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Funcionario#getUnidade <em>Unidade</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Unidade</em>'.
+	 * @see Model.Funcionario#getUnidade()
+	 * @see #getFuncionario()
+	 * @generated
+	 */
+	EAttribute getFuncionario_Unidade();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Funcionario#getRegistroFuncional <em>Registro Funcional</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Registro Funcional</em>'.
+	 * @see Model.Funcionario#getRegistroFuncional()
+	 * @see #getFuncionario()
+	 * @generated
+	 */
+	EAttribute getFuncionario_RegistroFuncional();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Funcionario#isStatusSuspensao <em>Status Suspensao</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Status Suspensao</em>'.
+	 * @see Model.Funcionario#isStatusSuspensao()
+	 * @see #getFuncionario()
+	 * @generated
+	 */
+	EAttribute getFuncionario_StatusSuspensao();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Funcionario#pagarMulta() <em>Pagar Multa</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Pagar Multa</em>' operation.
+	 * @see Model.Funcionario#pagarMulta()
+	 * @generated
+	 */
+	EOperation getFuncionario__PagarMulta();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1825,6 +2061,38 @@ public interface ModelPackage extends EPackage {
 		EClass ALUNO = eINSTANCE.getAluno();
 
 		/**
+		 * The meta object literal for the '<em><b>Curso</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALUNO__CURSO = eINSTANCE.getAluno_Curso();
+
+		/**
+		 * The meta object literal for the '<em><b>Registro Academico</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALUNO__REGISTRO_ACADEMICO = eINSTANCE.getAluno_RegistroAcademico();
+
+		/**
+		 * The meta object literal for the '<em><b>Status Suspensao</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALUNO__STATUS_SUSPENSAO = eINSTANCE.getAluno_StatusSuspensao();
+
+		/**
+		 * The meta object literal for the '<em><b>Pagar Multa</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ALUNO___PAGAR_MULTA = eINSTANCE.getAluno__PagarMulta();
+
+		/**
 		 * The meta object literal for the '{@link Model.impl.ProfessorImpl <em>Professor</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1835,6 +2103,38 @@ public interface ModelPackage extends EPackage {
 		EClass PROFESSOR = eINSTANCE.getProfessor();
 
 		/**
+		 * The meta object literal for the '<em><b>Unidade</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROFESSOR__UNIDADE = eINSTANCE.getProfessor_Unidade();
+
+		/**
+		 * The meta object literal for the '<em><b>Registro Funcional</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROFESSOR__REGISTRO_FUNCIONAL = eINSTANCE.getProfessor_RegistroFuncional();
+
+		/**
+		 * The meta object literal for the '<em><b>Bloquear</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation PROFESSOR___BLOQUEAR = eINSTANCE.getProfessor__Bloquear();
+
+		/**
+		 * The meta object literal for the '<em><b>Desbloquear</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation PROFESSOR___DESBLOQUEAR = eINSTANCE.getProfessor__Desbloquear();
+
+		/**
 		 * The meta object literal for the '{@link Model.impl.FuncionarioImpl <em>Funcionario</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1843,6 +2143,38 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FUNCIONARIO = eINSTANCE.getFuncionario();
+
+		/**
+		 * The meta object literal for the '<em><b>Unidade</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCIONARIO__UNIDADE = eINSTANCE.getFuncionario_Unidade();
+
+		/**
+		 * The meta object literal for the '<em><b>Registro Funcional</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCIONARIO__REGISTRO_FUNCIONAL = eINSTANCE.getFuncionario_RegistroFuncional();
+
+		/**
+		 * The meta object literal for the '<em><b>Status Suspensao</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCIONARIO__STATUS_SUSPENSAO = eINSTANCE.getFuncionario_StatusSuspensao();
+
+		/**
+		 * The meta object literal for the '<em><b>Pagar Multa</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation FUNCIONARIO___PAGAR_MULTA = eINSTANCE.getFuncionario__PagarMulta();
 
 	}
 

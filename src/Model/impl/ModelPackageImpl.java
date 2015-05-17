@@ -520,6 +520,42 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAluno_Curso() {
+		return (EAttribute)alunoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAluno_RegistroAcademico() {
+		return (EAttribute)alunoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAluno_StatusSuspensao() {
+		return (EAttribute)alunoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getAluno__PagarMulta() {
+		return alunoEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getProfessor() {
 		return professorEClass;
 	}
@@ -529,8 +565,80 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getProfessor_Unidade() {
+		return (EAttribute)professorEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProfessor_RegistroFuncional() {
+		return (EAttribute)professorEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getProfessor__Bloquear() {
+		return professorEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getProfessor__Desbloquear() {
+		return professorEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getFuncionario() {
 		return funcionarioEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFuncionario_Unidade() {
+		return (EAttribute)funcionarioEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFuncionario_RegistroFuncional() {
+		return (EAttribute)funcionarioEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFuncionario_StatusSuspensao() {
+		return (EAttribute)funcionarioEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getFuncionario__PagarMulta() {
+		return funcionarioEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -606,10 +714,22 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEOperation(usuarioEClass, USUARIO___RETORNA_CONSULTA);
 
 		alunoEClass = createEClass(ALUNO);
+		createEAttribute(alunoEClass, ALUNO__CURSO);
+		createEAttribute(alunoEClass, ALUNO__REGISTRO_ACADEMICO);
+		createEAttribute(alunoEClass, ALUNO__STATUS_SUSPENSAO);
+		createEOperation(alunoEClass, ALUNO___PAGAR_MULTA);
 
 		professorEClass = createEClass(PROFESSOR);
+		createEAttribute(professorEClass, PROFESSOR__UNIDADE);
+		createEAttribute(professorEClass, PROFESSOR__REGISTRO_FUNCIONAL);
+		createEOperation(professorEClass, PROFESSOR___BLOQUEAR);
+		createEOperation(professorEClass, PROFESSOR___DESBLOQUEAR);
 
 		funcionarioEClass = createEClass(FUNCIONARIO);
+		createEAttribute(funcionarioEClass, FUNCIONARIO__UNIDADE);
+		createEAttribute(funcionarioEClass, FUNCIONARIO__REGISTRO_FUNCIONAL);
+		createEAttribute(funcionarioEClass, FUNCIONARIO__STATUS_SUSPENSAO);
+		createEOperation(funcionarioEClass, FUNCIONARIO___PAGAR_MULTA);
 	}
 
 	/**
@@ -713,10 +833,26 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEOperation(getUsuario__RetornaConsulta(), null, "retornaConsulta", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(alunoEClass, Aluno.class, "Aluno", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAluno_Curso(), theTypesPackage.getString(), "curso", null, 1, 1, Aluno.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAluno_RegistroAcademico(), theTypesPackage.getInteger(), "registroAcademico", null, 1, 1, Aluno.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAluno_StatusSuspensao(), theTypesPackage.getBoolean(), "statusSuspensao", null, 1, 1, Aluno.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEOperation(getAluno__PagarMulta(), null, "pagarMulta", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(professorEClass, Professor.class, "Professor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getProfessor_Unidade(), theTypesPackage.getString(), "unidade", null, 1, 1, Professor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getProfessor_RegistroFuncional(), theTypesPackage.getInteger(), "registroFuncional", null, 1, 1, Professor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEOperation(getProfessor__Bloquear(), null, "bloquear", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getProfessor__Desbloquear(), null, "desbloquear", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(funcionarioEClass, Funcionario.class, "Funcionario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getFuncionario_Unidade(), theTypesPackage.getString(), "unidade", null, 1, 1, Funcionario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getFuncionario_RegistroFuncional(), theTypesPackage.getInteger(), "registroFuncional", null, 1, 1, Funcionario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getFuncionario_StatusSuspensao(), theTypesPackage.getBoolean(), "statusSuspensao", null, 1, 1, Funcionario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEOperation(getFuncionario__PagarMulta(), null, "pagarMulta", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

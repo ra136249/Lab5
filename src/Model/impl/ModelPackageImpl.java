@@ -3,7 +3,6 @@
 package Model.impl;
 
 import Model.Aluno;
-import Model.Biblioteca;
 import Model.Exemplar;
 import Model.Funcionario;
 import Model.ModelFactory;
@@ -13,6 +12,7 @@ import Model.Terminal;
 import Model.Usuario;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
@@ -24,13 +24,6 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * @generated
  */
 public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass bibliotecaEClass = null;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -139,8 +132,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getBiblioteca() {
-		return bibliotecaEClass;
+	public EClass getTerminal() {
+		return terminalEClass;
 	}
 
 	/**
@@ -148,8 +141,71 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTerminal() {
-		return terminalEClass;
+	public EOperation getTerminal__AdicionaExemplar() {
+		return terminalEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTerminal__RemoveExemplar() {
+		return terminalEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTerminal__AtualizaExemplar() {
+		return terminalEClass.getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTerminal__CadastraUsuario() {
+		return terminalEClass.getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTerminal__RemoveUsuario() {
+		return terminalEClass.getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTerminal__AtualizaUsuario() {
+		return terminalEClass.getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTerminal__StatusUsuario() {
+		return terminalEClass.getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getTerminal__ConsultaExemplar() {
+		return terminalEClass.getEOperations().get(7);
 	}
 
 	/**
@@ -225,9 +281,15 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		bibliotecaEClass = createEClass(BIBLIOTECA);
-
 		terminalEClass = createEClass(TERMINAL);
+		createEOperation(terminalEClass, TERMINAL___ADICIONA_EXEMPLAR);
+		createEOperation(terminalEClass, TERMINAL___REMOVE_EXEMPLAR);
+		createEOperation(terminalEClass, TERMINAL___ATUALIZA_EXEMPLAR);
+		createEOperation(terminalEClass, TERMINAL___CADASTRA_USUARIO);
+		createEOperation(terminalEClass, TERMINAL___REMOVE_USUARIO);
+		createEOperation(terminalEClass, TERMINAL___ATUALIZA_USUARIO);
+		createEOperation(terminalEClass, TERMINAL___STATUS_USUARIO);
+		createEOperation(terminalEClass, TERMINAL___CONSULTA_EXEMPLAR);
 
 		exemplarEClass = createEClass(EXEMPLAR);
 
@@ -273,9 +335,23 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		funcionarioEClass.getESuperTypes().add(this.getUsuario());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(bibliotecaEClass, Biblioteca.class, "Biblioteca", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEClass(terminalEClass, Terminal.class, "Terminal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEOperation(getTerminal__AdicionaExemplar(), null, "adicionaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getTerminal__RemoveExemplar(), null, "removeExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getTerminal__AtualizaExemplar(), null, "atualizaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getTerminal__CadastraUsuario(), null, "cadastraUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getTerminal__RemoveUsuario(), null, "removeUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getTerminal__AtualizaUsuario(), null, "atualizaUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getTerminal__StatusUsuario(), null, "statusUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getTerminal__ConsultaExemplar(), null, "consultaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(exemplarEClass, Exemplar.class, "Exemplar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

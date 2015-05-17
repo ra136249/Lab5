@@ -22,15 +22,6 @@ public interface ModelFactory extends EFactory {
 	ModelFactory eINSTANCE = Model.impl.ModelFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Biblioteca</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Biblioteca</em>'.
-	 * @generated
-	 */
-	Biblioteca createBiblioteca();
-
-	/**
 	 * Returns a new object of class '<em>Terminal</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

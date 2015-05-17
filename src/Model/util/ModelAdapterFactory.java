@@ -68,10 +68,6 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	protected ModelSwitch<Adapter> modelSwitch =
 		new ModelSwitch<Adapter>() {
 			@Override
-			public Adapter caseBiblioteca(Biblioteca object) {
-				return createBibliotecaAdapter();
-			}
-			@Override
 			public Adapter caseTerminal(Terminal object) {
 				return createTerminalAdapter();
 			}
@@ -114,20 +110,6 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Model.Biblioteca <em>Biblioteca</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Model.Biblioteca
-	 * @generated
-	 */
-	public Adapter createBibliotecaAdapter() {
-		return null;
-	}
 
 	/**
 	 * Creates a new adapter for an object of class '{@link Model.Terminal <em>Terminal</em>}'.

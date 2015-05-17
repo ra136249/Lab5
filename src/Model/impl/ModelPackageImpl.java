@@ -11,11 +11,16 @@ import Model.Professor;
 import Model.Terminal;
 import Model.Usuario;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+import org.eclipse.uml2.types.TypesPackage;
+
+import org.eclipse.uml2.types.impl.TypesPackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -112,11 +117,16 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 
 		isInited = true;
 
+		// Obtain or create and register interdependencies
+		TypesPackageImpl theTypesPackage = (TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI) instanceof TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI) : TypesPackage.eINSTANCE);
+
 		// Create package meta-data objects
 		theModelPackage.createPackageContents();
+		theTypesPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theModelPackage.initializePackageContents();
+		theTypesPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theModelPackage.freeze();
@@ -222,6 +232,114 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getExemplar_Nome() {
+		return (EAttribute)exemplarEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getExemplar_Codigo() {
+		return (EAttribute)exemplarEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getExemplar_Autor() {
+		return (EAttribute)exemplarEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getExemplar_Ano() {
+		return (EAttribute)exemplarEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getExemplar_StatusReserva() {
+		return (EAttribute)exemplarEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getExemplar_StatusBloqueio() {
+		return (EAttribute)exemplarEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getExemplar__ReservaExemplar() {
+		return exemplarEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getExemplar__BloqueiaExemplar() {
+		return exemplarEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getExemplar__RetornaConsulta() {
+		return exemplarEClass.getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getExemplar__DesbloqueiaExemplar() {
+		return exemplarEClass.getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getExemplar__EmprestaExemplar() {
+		return exemplarEClass.getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getExemplar__DevolveExemplar() {
+		return exemplarEClass.getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getUsuario() {
 		return usuarioEClass;
 	}
@@ -292,6 +410,18 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEOperation(terminalEClass, TERMINAL___CONSULTA_EXEMPLAR);
 
 		exemplarEClass = createEClass(EXEMPLAR);
+		createEAttribute(exemplarEClass, EXEMPLAR__NOME);
+		createEAttribute(exemplarEClass, EXEMPLAR__CODIGO);
+		createEAttribute(exemplarEClass, EXEMPLAR__AUTOR);
+		createEAttribute(exemplarEClass, EXEMPLAR__ANO);
+		createEAttribute(exemplarEClass, EXEMPLAR__STATUS_RESERVA);
+		createEAttribute(exemplarEClass, EXEMPLAR__STATUS_BLOQUEIO);
+		createEOperation(exemplarEClass, EXEMPLAR___RESERVA_EXEMPLAR);
+		createEOperation(exemplarEClass, EXEMPLAR___BLOQUEIA_EXEMPLAR);
+		createEOperation(exemplarEClass, EXEMPLAR___RETORNA_CONSULTA);
+		createEOperation(exemplarEClass, EXEMPLAR___DESBLOQUEIA_EXEMPLAR);
+		createEOperation(exemplarEClass, EXEMPLAR___EMPRESTA_EXEMPLAR);
+		createEOperation(exemplarEClass, EXEMPLAR___DEVOLVE_EXEMPLAR);
 
 		usuarioEClass = createEClass(USUARIO);
 
@@ -325,6 +455,9 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		setNsPrefix(eNS_PREFIX);
 		setNsURI(eNS_URI);
 
+		// Obtain other dependent packages
+		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
+
 		// Create type parameters
 
 		// Set bounds for type parameters
@@ -354,6 +487,24 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEOperation(getTerminal__ConsultaExemplar(), null, "consultaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(exemplarEClass, Exemplar.class, "Exemplar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getExemplar_Nome(), theTypesPackage.getString(), "nome", null, 1, 1, Exemplar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getExemplar_Codigo(), theTypesPackage.getString(), "codigo", null, 1, 1, Exemplar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getExemplar_Autor(), theTypesPackage.getString(), "autor", null, 1, 1, Exemplar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getExemplar_Ano(), theTypesPackage.getInteger(), "ano", null, 1, 1, Exemplar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getExemplar_StatusReserva(), theTypesPackage.getBoolean(), "statusReserva", null, 1, 1, Exemplar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getExemplar_StatusBloqueio(), theTypesPackage.getBoolean(), "statusBloqueio", null, 1, 1, Exemplar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEOperation(getExemplar__ReservaExemplar(), null, "reservaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getExemplar__BloqueiaExemplar(), null, "bloqueiaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getExemplar__RetornaConsulta(), null, "retornaConsulta", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getExemplar__DesbloqueiaExemplar(), null, "desbloqueiaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getExemplar__EmprestaExemplar(), null, "emprestaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEOperation(getExemplar__DevolveExemplar(), null, "devolveExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(usuarioEClass, Usuario.class, "Usuario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

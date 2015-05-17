@@ -2,6 +2,7 @@
  */
 package Model;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
@@ -166,13 +167,121 @@ public interface ModelPackage extends EPackage {
 	int EXEMPLAR = 1;
 
 	/**
+	 * The feature id for the '<em><b>Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR__NOME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Codigo</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR__CODIGO = 1;
+
+	/**
+	 * The feature id for the '<em><b>Autor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR__AUTOR = 2;
+
+	/**
+	 * The feature id for the '<em><b>Ano</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR__ANO = 3;
+
+	/**
+	 * The feature id for the '<em><b>Status Reserva</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR__STATUS_RESERVA = 4;
+
+	/**
+	 * The feature id for the '<em><b>Status Bloqueio</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR__STATUS_BLOQUEIO = 5;
+
+	/**
 	 * The number of structural features of the '<em>Exemplar</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXEMPLAR_FEATURE_COUNT = 0;
+	int EXEMPLAR_FEATURE_COUNT = 6;
+
+	/**
+	 * The operation id for the '<em>Reserva Exemplar</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR___RESERVA_EXEMPLAR = 0;
+
+	/**
+	 * The operation id for the '<em>Bloqueia Exemplar</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR___BLOQUEIA_EXEMPLAR = 1;
+
+	/**
+	 * The operation id for the '<em>Retorna Consulta</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR___RETORNA_CONSULTA = 2;
+
+	/**
+	 * The operation id for the '<em>Desbloqueia Exemplar</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR___DESBLOQUEIA_EXEMPLAR = 3;
+
+	/**
+	 * The operation id for the '<em>Empresta Exemplar</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR___EMPRESTA_EXEMPLAR = 4;
+
+	/**
+	 * The operation id for the '<em>Devolve Exemplar</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXEMPLAR___DEVOLVE_EXEMPLAR = 5;
 
 	/**
 	 * The number of operations of the '<em>Exemplar</em>' class.
@@ -181,7 +290,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXEMPLAR_OPERATION_COUNT = 0;
+	int EXEMPLAR_OPERATION_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link Model.impl.UsuarioImpl <em>Usuario</em>}' class.
@@ -397,6 +506,132 @@ public interface ModelPackage extends EPackage {
 	EClass getExemplar();
 
 	/**
+	 * Returns the meta object for the attribute '{@link Model.Exemplar#getNome <em>Nome</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nome</em>'.
+	 * @see Model.Exemplar#getNome()
+	 * @see #getExemplar()
+	 * @generated
+	 */
+	EAttribute getExemplar_Nome();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Exemplar#getCodigo <em>Codigo</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Codigo</em>'.
+	 * @see Model.Exemplar#getCodigo()
+	 * @see #getExemplar()
+	 * @generated
+	 */
+	EAttribute getExemplar_Codigo();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Exemplar#getAutor <em>Autor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Autor</em>'.
+	 * @see Model.Exemplar#getAutor()
+	 * @see #getExemplar()
+	 * @generated
+	 */
+	EAttribute getExemplar_Autor();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Exemplar#getAno <em>Ano</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ano</em>'.
+	 * @see Model.Exemplar#getAno()
+	 * @see #getExemplar()
+	 * @generated
+	 */
+	EAttribute getExemplar_Ano();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Exemplar#isStatusReserva <em>Status Reserva</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Status Reserva</em>'.
+	 * @see Model.Exemplar#isStatusReserva()
+	 * @see #getExemplar()
+	 * @generated
+	 */
+	EAttribute getExemplar_StatusReserva();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Model.Exemplar#isStatusBloqueio <em>Status Bloqueio</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Status Bloqueio</em>'.
+	 * @see Model.Exemplar#isStatusBloqueio()
+	 * @see #getExemplar()
+	 * @generated
+	 */
+	EAttribute getExemplar_StatusBloqueio();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Exemplar#reservaExemplar() <em>Reserva Exemplar</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Reserva Exemplar</em>' operation.
+	 * @see Model.Exemplar#reservaExemplar()
+	 * @generated
+	 */
+	EOperation getExemplar__ReservaExemplar();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Exemplar#bloqueiaExemplar() <em>Bloqueia Exemplar</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Bloqueia Exemplar</em>' operation.
+	 * @see Model.Exemplar#bloqueiaExemplar()
+	 * @generated
+	 */
+	EOperation getExemplar__BloqueiaExemplar();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Exemplar#retornaConsulta() <em>Retorna Consulta</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Retorna Consulta</em>' operation.
+	 * @see Model.Exemplar#retornaConsulta()
+	 * @generated
+	 */
+	EOperation getExemplar__RetornaConsulta();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Exemplar#desbloqueiaExemplar() <em>Desbloqueia Exemplar</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Desbloqueia Exemplar</em>' operation.
+	 * @see Model.Exemplar#desbloqueiaExemplar()
+	 * @generated
+	 */
+	EOperation getExemplar__DesbloqueiaExemplar();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Exemplar#emprestaExemplar() <em>Empresta Exemplar</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Empresta Exemplar</em>' operation.
+	 * @see Model.Exemplar#emprestaExemplar()
+	 * @generated
+	 */
+	EOperation getExemplar__EmprestaExemplar();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Exemplar#devolveExemplar() <em>Devolve Exemplar</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Devolve Exemplar</em>' operation.
+	 * @see Model.Exemplar#devolveExemplar()
+	 * @generated
+	 */
+	EOperation getExemplar__DevolveExemplar();
+
+	/**
 	 * Returns the meta object for class '{@link Model.Usuario <em>Usuario</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -542,6 +777,102 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EClass EXEMPLAR = eINSTANCE.getExemplar();
+
+		/**
+		 * The meta object literal for the '<em><b>Nome</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXEMPLAR__NOME = eINSTANCE.getExemplar_Nome();
+
+		/**
+		 * The meta object literal for the '<em><b>Codigo</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXEMPLAR__CODIGO = eINSTANCE.getExemplar_Codigo();
+
+		/**
+		 * The meta object literal for the '<em><b>Autor</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXEMPLAR__AUTOR = eINSTANCE.getExemplar_Autor();
+
+		/**
+		 * The meta object literal for the '<em><b>Ano</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXEMPLAR__ANO = eINSTANCE.getExemplar_Ano();
+
+		/**
+		 * The meta object literal for the '<em><b>Status Reserva</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXEMPLAR__STATUS_RESERVA = eINSTANCE.getExemplar_StatusReserva();
+
+		/**
+		 * The meta object literal for the '<em><b>Status Bloqueio</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXEMPLAR__STATUS_BLOQUEIO = eINSTANCE.getExemplar_StatusBloqueio();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserva Exemplar</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation EXEMPLAR___RESERVA_EXEMPLAR = eINSTANCE.getExemplar__ReservaExemplar();
+
+		/**
+		 * The meta object literal for the '<em><b>Bloqueia Exemplar</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation EXEMPLAR___BLOQUEIA_EXEMPLAR = eINSTANCE.getExemplar__BloqueiaExemplar();
+
+		/**
+		 * The meta object literal for the '<em><b>Retorna Consulta</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation EXEMPLAR___RETORNA_CONSULTA = eINSTANCE.getExemplar__RetornaConsulta();
+
+		/**
+		 * The meta object literal for the '<em><b>Desbloqueia Exemplar</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation EXEMPLAR___DESBLOQUEIA_EXEMPLAR = eINSTANCE.getExemplar__DesbloqueiaExemplar();
+
+		/**
+		 * The meta object literal for the '<em><b>Empresta Exemplar</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation EXEMPLAR___EMPRESTA_EXEMPLAR = eINSTANCE.getExemplar__EmprestaExemplar();
+
+		/**
+		 * The meta object literal for the '<em><b>Devolve Exemplar</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation EXEMPLAR___DEVOLVE_EXEMPLAR = eINSTANCE.getExemplar__DevolveExemplar();
 
 		/**
 		 * The meta object literal for the '{@link Model.impl.UsuarioImpl <em>Usuario</em>}' class.

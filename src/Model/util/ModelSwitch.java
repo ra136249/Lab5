@@ -66,9 +66,9 @@ public class ModelSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case ModelPackage.TERMINAL: {
-				Terminal terminal = (Terminal)theEObject;
-				T result = caseTerminal(terminal);
+			case ModelPackage.BIBLIOTECA: {
+				Biblioteca biblioteca = (Biblioteca)theEObject;
+				T result = caseBiblioteca(biblioteca);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -105,22 +105,28 @@ public class ModelSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ModelPackage.TERMINAL: {
+				Terminal terminal = (Terminal)theEObject;
+				T result = caseTerminal(terminal);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Terminal</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Biblioteca</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Terminal</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Biblioteca</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTerminal(Terminal object) {
+	public T caseBiblioteca(Biblioteca object) {
 		return null;
 	}
 
@@ -196,6 +202,21 @@ public class ModelSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFuncionario(Funcionario object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Terminal</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Terminal</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTerminal(Terminal object) {
 		return null;
 	}
 

@@ -68,8 +68,8 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	protected ModelSwitch<Adapter> modelSwitch =
 		new ModelSwitch<Adapter>() {
 			@Override
-			public Adapter caseTerminal(Terminal object) {
-				return createTerminalAdapter();
+			public Adapter caseBiblioteca(Biblioteca object) {
+				return createBibliotecaAdapter();
 			}
 			@Override
 			public Adapter caseExemplar(Exemplar object) {
@@ -92,6 +92,10 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 				return createFuncionarioAdapter();
 			}
 			@Override
+			public Adapter caseTerminal(Terminal object) {
+				return createTerminalAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -112,16 +116,16 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Model.Terminal <em>Terminal</em>}'.
+	 * Creates a new adapter for an object of class '{@link Model.Biblioteca <em>Biblioteca</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Model.Terminal
+	 * @see Model.Biblioteca
 	 * @generated
 	 */
-	public Adapter createTerminalAdapter() {
+	public Adapter createBibliotecaAdapter() {
 		return null;
 	}
 
@@ -192,6 +196,20 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFuncionarioAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Model.Terminal <em>Terminal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Model.Terminal
+	 * @generated
+	 */
+	public Adapter createTerminalAdapter() {
 		return null;
 	}
 

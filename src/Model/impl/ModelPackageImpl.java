@@ -3,6 +3,7 @@
 package Model.impl;
 
 import Model.Aluno;
+import Model.Biblioteca;
 import Model.Exemplar;
 import Model.Funcionario;
 import Model.ModelFactory;
@@ -34,7 +35,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass terminalEClass = null;
+	private EClass bibliotecaEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,6 +71,13 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * @generated
 	 */
 	private EClass funcionarioEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass terminalEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -142,8 +150,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTerminal() {
-		return terminalEClass;
+	public EClass getBiblioteca() {
+		return bibliotecaEClass;
 	}
 
 	/**
@@ -151,8 +159,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__AdicionaExemplar() {
-		return terminalEClass.getEOperations().get(0);
+	public EOperation getBiblioteca__AdicionaExemplar() {
+		return bibliotecaEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -160,8 +168,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__RemoveExemplar() {
-		return terminalEClass.getEOperations().get(1);
+	public EOperation getBiblioteca__RemoveExemplar() {
+		return bibliotecaEClass.getEOperations().get(1);
 	}
 
 	/**
@@ -169,8 +177,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__AtualizaExemplar() {
-		return terminalEClass.getEOperations().get(2);
+	public EOperation getBiblioteca__AtualizaExemplar() {
+		return bibliotecaEClass.getEOperations().get(2);
 	}
 
 	/**
@@ -178,8 +186,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__CadastraUsuario() {
-		return terminalEClass.getEOperations().get(3);
+	public EOperation getBiblioteca__CadastraUsuario() {
+		return bibliotecaEClass.getEOperations().get(3);
 	}
 
 	/**
@@ -187,8 +195,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__RemoveUsuario() {
-		return terminalEClass.getEOperations().get(4);
+	public EOperation getBiblioteca__RemoveUsuario() {
+		return bibliotecaEClass.getEOperations().get(4);
 	}
 
 	/**
@@ -196,8 +204,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__AtualizaUsuario() {
-		return terminalEClass.getEOperations().get(5);
+	public EOperation getBiblioteca__AtualizaUsuario() {
+		return bibliotecaEClass.getEOperations().get(5);
 	}
 
 	/**
@@ -205,8 +213,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__ConsultaUsuario() {
-		return terminalEClass.getEOperations().get(6);
+	public EOperation getBiblioteca__ConsultaUsuario() {
+		return bibliotecaEClass.getEOperations().get(6);
 	}
 
 	/**
@@ -214,8 +222,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__ConsultaExemplar() {
-		return terminalEClass.getEOperations().get(7);
+	public EOperation getBiblioteca__ConsultaExemplar() {
+		return bibliotecaEClass.getEOperations().get(7);
 	}
 
 	/**
@@ -223,8 +231,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__AplicaMulta() {
-		return terminalEClass.getEOperations().get(8);
+	public EOperation getBiblioteca__AplicaMulta() {
+		return bibliotecaEClass.getEOperations().get(8);
 	}
 
 	/**
@@ -232,8 +240,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTerminal__SuspendeUsuario() {
-		return terminalEClass.getEOperations().get(9);
+	public EOperation getBiblioteca__SuspendeUsuario() {
+		return bibliotecaEClass.getEOperations().get(9);
 	}
 
 	/**
@@ -646,6 +654,15 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getTerminal() {
+		return terminalEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ModelFactory getModelFactory() {
 		return (ModelFactory)getEFactoryInstance();
 	}
@@ -669,17 +686,17 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		terminalEClass = createEClass(TERMINAL);
-		createEOperation(terminalEClass, TERMINAL___ADICIONA_EXEMPLAR);
-		createEOperation(terminalEClass, TERMINAL___REMOVE_EXEMPLAR);
-		createEOperation(terminalEClass, TERMINAL___ATUALIZA_EXEMPLAR);
-		createEOperation(terminalEClass, TERMINAL___CADASTRA_USUARIO);
-		createEOperation(terminalEClass, TERMINAL___REMOVE_USUARIO);
-		createEOperation(terminalEClass, TERMINAL___ATUALIZA_USUARIO);
-		createEOperation(terminalEClass, TERMINAL___CONSULTA_USUARIO);
-		createEOperation(terminalEClass, TERMINAL___CONSULTA_EXEMPLAR);
-		createEOperation(terminalEClass, TERMINAL___APLICA_MULTA);
-		createEOperation(terminalEClass, TERMINAL___SUSPENDE_USUARIO);
+		bibliotecaEClass = createEClass(BIBLIOTECA);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___ADICIONA_EXEMPLAR);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___REMOVE_EXEMPLAR);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___ATUALIZA_EXEMPLAR);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___CADASTRA_USUARIO);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___REMOVE_USUARIO);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___ATUALIZA_USUARIO);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___CONSULTA_USUARIO);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___CONSULTA_EXEMPLAR);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___APLICA_MULTA);
+		createEOperation(bibliotecaEClass, BIBLIOTECA___SUSPENDE_USUARIO);
 
 		exemplarEClass = createEClass(EXEMPLAR);
 		createEAttribute(exemplarEClass, EXEMPLAR__NOME);
@@ -730,6 +747,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEAttribute(funcionarioEClass, FUNCIONARIO__REGISTRO_FUNCIONAL);
 		createEAttribute(funcionarioEClass, FUNCIONARIO__STATUS_SUSPENSAO);
 		createEOperation(funcionarioEClass, FUNCIONARIO___PAGAR_MULTA);
+
+		terminalEClass = createEClass(TERMINAL);
 	}
 
 	/**
@@ -768,27 +787,27 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		funcionarioEClass.getESuperTypes().add(this.getUsuario());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(terminalEClass, Terminal.class, "Terminal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(bibliotecaEClass, Biblioteca.class, "Biblioteca", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEOperation(getTerminal__AdicionaExemplar(), null, "adicionaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__AdicionaExemplar(), null, "adicionaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__RemoveExemplar(), null, "removeExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__RemoveExemplar(), null, "removeExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__AtualizaExemplar(), null, "atualizaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__AtualizaExemplar(), null, "atualizaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__CadastraUsuario(), null, "cadastraUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__CadastraUsuario(), null, "cadastraUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__RemoveUsuario(), null, "removeUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__RemoveUsuario(), null, "removeUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__AtualizaUsuario(), null, "atualizaUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__AtualizaUsuario(), null, "atualizaUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__ConsultaUsuario(), null, "consultaUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__ConsultaUsuario(), null, "consultaUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__ConsultaExemplar(), null, "consultaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__ConsultaExemplar(), null, "consultaExemplar", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__AplicaMulta(), null, "aplicaMulta", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__AplicaMulta(), null, "aplicaMulta", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEOperation(getTerminal__SuspendeUsuario(), null, "suspendeUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		initEOperation(getBiblioteca__SuspendeUsuario(), null, "suspendeUsuario", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(exemplarEClass, Exemplar.class, "Exemplar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getExemplar_Nome(), theTypesPackage.getString(), "nome", null, 1, 1, Exemplar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -853,6 +872,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEAttribute(getFuncionario_StatusSuspensao(), theTypesPackage.getBoolean(), "statusSuspensao", null, 1, 1, Funcionario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEOperation(getFuncionario__PagarMulta(), null, "pagarMulta", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(terminalEClass, Terminal.class, "Terminal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

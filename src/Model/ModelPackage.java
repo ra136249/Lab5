@@ -57,23 +57,23 @@ public interface ModelPackage extends EPackage {
 	ModelPackage eINSTANCE = Model.impl.ModelPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link Model.impl.TerminalImpl <em>Terminal</em>}' class.
+	 * The meta object id for the '{@link Model.impl.BibliotecaImpl <em>Biblioteca</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Model.impl.TerminalImpl
-	 * @see Model.impl.ModelPackageImpl#getTerminal()
+	 * @see Model.impl.BibliotecaImpl
+	 * @see Model.impl.ModelPackageImpl#getBiblioteca()
 	 * @generated
 	 */
-	int TERMINAL = 0;
+	int BIBLIOTECA = 0;
 
 	/**
-	 * The number of structural features of the '<em>Terminal</em>' class.
+	 * The number of structural features of the '<em>Biblioteca</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL_FEATURE_COUNT = 0;
+	int BIBLIOTECA_FEATURE_COUNT = 0;
 
 	/**
 	 * The operation id for the '<em>Adiciona Exemplar</em>' operation.
@@ -82,7 +82,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___ADICIONA_EXEMPLAR = 0;
+	int BIBLIOTECA___ADICIONA_EXEMPLAR = 0;
 
 	/**
 	 * The operation id for the '<em>Remove Exemplar</em>' operation.
@@ -91,7 +91,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___REMOVE_EXEMPLAR = 1;
+	int BIBLIOTECA___REMOVE_EXEMPLAR = 1;
 
 	/**
 	 * The operation id for the '<em>Atualiza Exemplar</em>' operation.
@@ -100,7 +100,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___ATUALIZA_EXEMPLAR = 2;
+	int BIBLIOTECA___ATUALIZA_EXEMPLAR = 2;
 
 	/**
 	 * The operation id for the '<em>Cadastra Usuario</em>' operation.
@@ -109,7 +109,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___CADASTRA_USUARIO = 3;
+	int BIBLIOTECA___CADASTRA_USUARIO = 3;
 
 	/**
 	 * The operation id for the '<em>Remove Usuario</em>' operation.
@@ -118,7 +118,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___REMOVE_USUARIO = 4;
+	int BIBLIOTECA___REMOVE_USUARIO = 4;
 
 	/**
 	 * The operation id for the '<em>Atualiza Usuario</em>' operation.
@@ -127,7 +127,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___ATUALIZA_USUARIO = 5;
+	int BIBLIOTECA___ATUALIZA_USUARIO = 5;
 
 	/**
 	 * The operation id for the '<em>Consulta Usuario</em>' operation.
@@ -136,7 +136,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___CONSULTA_USUARIO = 6;
+	int BIBLIOTECA___CONSULTA_USUARIO = 6;
 
 	/**
 	 * The operation id for the '<em>Consulta Exemplar</em>' operation.
@@ -145,7 +145,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___CONSULTA_EXEMPLAR = 7;
+	int BIBLIOTECA___CONSULTA_EXEMPLAR = 7;
 
 	/**
 	 * The operation id for the '<em>Aplica Multa</em>' operation.
@@ -154,7 +154,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___APLICA_MULTA = 8;
+	int BIBLIOTECA___APLICA_MULTA = 8;
 
 	/**
 	 * The operation id for the '<em>Suspende Usuario</em>' operation.
@@ -163,16 +163,16 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL___SUSPENDE_USUARIO = 9;
+	int BIBLIOTECA___SUSPENDE_USUARIO = 9;
 
 	/**
-	 * The number of operations of the '<em>Terminal</em>' class.
+	 * The number of operations of the '<em>Biblioteca</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINAL_OPERATION_COUNT = 10;
+	int BIBLIOTECA_OPERATION_COUNT = 10;
 
 	/**
 	 * The meta object id for the '{@link Model.impl.ExemplarImpl <em>Exemplar</em>}' class.
@@ -1106,116 +1106,144 @@ public interface ModelPackage extends EPackage {
 	 */
 	int FUNCIONARIO_OPERATION_COUNT = USUARIO_OPERATION_COUNT + 1;
 
-
 	/**
-	 * Returns the meta object for class '{@link Model.Terminal <em>Terminal</em>}'.
+	 * The meta object id for the '{@link Model.impl.TerminalImpl <em>Terminal</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Terminal</em>'.
-	 * @see Model.Terminal
+	 * @see Model.impl.TerminalImpl
+	 * @see Model.impl.ModelPackageImpl#getTerminal()
 	 * @generated
 	 */
-	EClass getTerminal();
+	int TERMINAL = 6;
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#adicionaExemplar() <em>Adiciona Exemplar</em>}' operation.
+	 * The number of structural features of the '<em>Terminal</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINAL_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Terminal</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINAL_OPERATION_COUNT = 0;
+
+
+	/**
+	 * Returns the meta object for class '{@link Model.Biblioteca <em>Biblioteca</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Biblioteca</em>'.
+	 * @see Model.Biblioteca
+	 * @generated
+	 */
+	EClass getBiblioteca();
+
+	/**
+	 * Returns the meta object for the '{@link Model.Biblioteca#adicionaExemplar() <em>Adiciona Exemplar</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Adiciona Exemplar</em>' operation.
-	 * @see Model.Terminal#adicionaExemplar()
+	 * @see Model.Biblioteca#adicionaExemplar()
 	 * @generated
 	 */
-	EOperation getTerminal__AdicionaExemplar();
+	EOperation getBiblioteca__AdicionaExemplar();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#removeExemplar() <em>Remove Exemplar</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Biblioteca#removeExemplar() <em>Remove Exemplar</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Remove Exemplar</em>' operation.
-	 * @see Model.Terminal#removeExemplar()
+	 * @see Model.Biblioteca#removeExemplar()
 	 * @generated
 	 */
-	EOperation getTerminal__RemoveExemplar();
+	EOperation getBiblioteca__RemoveExemplar();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#atualizaExemplar() <em>Atualiza Exemplar</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Biblioteca#atualizaExemplar() <em>Atualiza Exemplar</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Atualiza Exemplar</em>' operation.
-	 * @see Model.Terminal#atualizaExemplar()
+	 * @see Model.Biblioteca#atualizaExemplar()
 	 * @generated
 	 */
-	EOperation getTerminal__AtualizaExemplar();
+	EOperation getBiblioteca__AtualizaExemplar();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#cadastraUsuario() <em>Cadastra Usuario</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Biblioteca#cadastraUsuario() <em>Cadastra Usuario</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Cadastra Usuario</em>' operation.
-	 * @see Model.Terminal#cadastraUsuario()
+	 * @see Model.Biblioteca#cadastraUsuario()
 	 * @generated
 	 */
-	EOperation getTerminal__CadastraUsuario();
+	EOperation getBiblioteca__CadastraUsuario();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#removeUsuario() <em>Remove Usuario</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Biblioteca#removeUsuario() <em>Remove Usuario</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Remove Usuario</em>' operation.
-	 * @see Model.Terminal#removeUsuario()
+	 * @see Model.Biblioteca#removeUsuario()
 	 * @generated
 	 */
-	EOperation getTerminal__RemoveUsuario();
+	EOperation getBiblioteca__RemoveUsuario();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#atualizaUsuario() <em>Atualiza Usuario</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Biblioteca#atualizaUsuario() <em>Atualiza Usuario</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Atualiza Usuario</em>' operation.
-	 * @see Model.Terminal#atualizaUsuario()
+	 * @see Model.Biblioteca#atualizaUsuario()
 	 * @generated
 	 */
-	EOperation getTerminal__AtualizaUsuario();
+	EOperation getBiblioteca__AtualizaUsuario();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#consultaUsuario() <em>Consulta Usuario</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Biblioteca#consultaUsuario() <em>Consulta Usuario</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Consulta Usuario</em>' operation.
-	 * @see Model.Terminal#consultaUsuario()
+	 * @see Model.Biblioteca#consultaUsuario()
 	 * @generated
 	 */
-	EOperation getTerminal__ConsultaUsuario();
+	EOperation getBiblioteca__ConsultaUsuario();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#consultaExemplar() <em>Consulta Exemplar</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Biblioteca#consultaExemplar() <em>Consulta Exemplar</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Consulta Exemplar</em>' operation.
-	 * @see Model.Terminal#consultaExemplar()
+	 * @see Model.Biblioteca#consultaExemplar()
 	 * @generated
 	 */
-	EOperation getTerminal__ConsultaExemplar();
+	EOperation getBiblioteca__ConsultaExemplar();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#aplicaMulta() <em>Aplica Multa</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Biblioteca#aplicaMulta() <em>Aplica Multa</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Aplica Multa</em>' operation.
-	 * @see Model.Terminal#aplicaMulta()
+	 * @see Model.Biblioteca#aplicaMulta()
 	 * @generated
 	 */
-	EOperation getTerminal__AplicaMulta();
+	EOperation getBiblioteca__AplicaMulta();
 
 	/**
-	 * Returns the meta object for the '{@link Model.Terminal#suspendeUsuario() <em>Suspende Usuario</em>}' operation.
+	 * Returns the meta object for the '{@link Model.Biblioteca#suspendeUsuario() <em>Suspende Usuario</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Suspende Usuario</em>' operation.
-	 * @see Model.Terminal#suspendeUsuario()
+	 * @see Model.Biblioteca#suspendeUsuario()
 	 * @generated
 	 */
-	EOperation getTerminal__SuspendeUsuario();
+	EOperation getBiblioteca__SuspendeUsuario();
 
 	/**
 	 * Returns the meta object for class '{@link Model.Exemplar <em>Exemplar</em>}'.
@@ -1694,6 +1722,16 @@ public interface ModelPackage extends EPackage {
 	EOperation getFuncionario__PagarMulta();
 
 	/**
+	 * Returns the meta object for class '{@link Model.Terminal <em>Terminal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Terminal</em>'.
+	 * @see Model.Terminal
+	 * @generated
+	 */
+	EClass getTerminal();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1717,14 +1755,14 @@ public interface ModelPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link Model.impl.TerminalImpl <em>Terminal</em>}' class.
+		 * The meta object literal for the '{@link Model.impl.BibliotecaImpl <em>Biblioteca</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Model.impl.TerminalImpl
-		 * @see Model.impl.ModelPackageImpl#getTerminal()
+		 * @see Model.impl.BibliotecaImpl
+		 * @see Model.impl.ModelPackageImpl#getBiblioteca()
 		 * @generated
 		 */
-		EClass TERMINAL = eINSTANCE.getTerminal();
+		EClass BIBLIOTECA = eINSTANCE.getBiblioteca();
 
 		/**
 		 * The meta object literal for the '<em><b>Adiciona Exemplar</b></em>' operation.
@@ -1732,7 +1770,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___ADICIONA_EXEMPLAR = eINSTANCE.getTerminal__AdicionaExemplar();
+		EOperation BIBLIOTECA___ADICIONA_EXEMPLAR = eINSTANCE.getBiblioteca__AdicionaExemplar();
 
 		/**
 		 * The meta object literal for the '<em><b>Remove Exemplar</b></em>' operation.
@@ -1740,7 +1778,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___REMOVE_EXEMPLAR = eINSTANCE.getTerminal__RemoveExemplar();
+		EOperation BIBLIOTECA___REMOVE_EXEMPLAR = eINSTANCE.getBiblioteca__RemoveExemplar();
 
 		/**
 		 * The meta object literal for the '<em><b>Atualiza Exemplar</b></em>' operation.
@@ -1748,7 +1786,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___ATUALIZA_EXEMPLAR = eINSTANCE.getTerminal__AtualizaExemplar();
+		EOperation BIBLIOTECA___ATUALIZA_EXEMPLAR = eINSTANCE.getBiblioteca__AtualizaExemplar();
 
 		/**
 		 * The meta object literal for the '<em><b>Cadastra Usuario</b></em>' operation.
@@ -1756,7 +1794,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___CADASTRA_USUARIO = eINSTANCE.getTerminal__CadastraUsuario();
+		EOperation BIBLIOTECA___CADASTRA_USUARIO = eINSTANCE.getBiblioteca__CadastraUsuario();
 
 		/**
 		 * The meta object literal for the '<em><b>Remove Usuario</b></em>' operation.
@@ -1764,7 +1802,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___REMOVE_USUARIO = eINSTANCE.getTerminal__RemoveUsuario();
+		EOperation BIBLIOTECA___REMOVE_USUARIO = eINSTANCE.getBiblioteca__RemoveUsuario();
 
 		/**
 		 * The meta object literal for the '<em><b>Atualiza Usuario</b></em>' operation.
@@ -1772,7 +1810,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___ATUALIZA_USUARIO = eINSTANCE.getTerminal__AtualizaUsuario();
+		EOperation BIBLIOTECA___ATUALIZA_USUARIO = eINSTANCE.getBiblioteca__AtualizaUsuario();
 
 		/**
 		 * The meta object literal for the '<em><b>Consulta Usuario</b></em>' operation.
@@ -1780,7 +1818,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___CONSULTA_USUARIO = eINSTANCE.getTerminal__ConsultaUsuario();
+		EOperation BIBLIOTECA___CONSULTA_USUARIO = eINSTANCE.getBiblioteca__ConsultaUsuario();
 
 		/**
 		 * The meta object literal for the '<em><b>Consulta Exemplar</b></em>' operation.
@@ -1788,7 +1826,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___CONSULTA_EXEMPLAR = eINSTANCE.getTerminal__ConsultaExemplar();
+		EOperation BIBLIOTECA___CONSULTA_EXEMPLAR = eINSTANCE.getBiblioteca__ConsultaExemplar();
 
 		/**
 		 * The meta object literal for the '<em><b>Aplica Multa</b></em>' operation.
@@ -1796,7 +1834,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___APLICA_MULTA = eINSTANCE.getTerminal__AplicaMulta();
+		EOperation BIBLIOTECA___APLICA_MULTA = eINSTANCE.getBiblioteca__AplicaMulta();
 
 		/**
 		 * The meta object literal for the '<em><b>Suspende Usuario</b></em>' operation.
@@ -1804,7 +1842,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TERMINAL___SUSPENDE_USUARIO = eINSTANCE.getTerminal__SuspendeUsuario();
+		EOperation BIBLIOTECA___SUSPENDE_USUARIO = eINSTANCE.getBiblioteca__SuspendeUsuario();
 
 		/**
 		 * The meta object literal for the '{@link Model.impl.ExemplarImpl <em>Exemplar</em>}' class.
@@ -2175,6 +2213,16 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation FUNCIONARIO___PAGAR_MULTA = eINSTANCE.getFuncionario__PagarMulta();
+
+		/**
+		 * The meta object literal for the '{@link Model.impl.TerminalImpl <em>Terminal</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Model.impl.TerminalImpl
+		 * @see Model.impl.ModelPackageImpl#getTerminal()
+		 * @generated
+		 */
+		EClass TERMINAL = eINSTANCE.getTerminal();
 
 	}
 

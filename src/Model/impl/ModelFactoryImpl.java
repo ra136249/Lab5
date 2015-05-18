@@ -56,12 +56,13 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case ModelPackage.TERMINAL: return createTerminal();
+			case ModelPackage.BIBLIOTECA: return createBiblioteca();
 			case ModelPackage.EXEMPLAR: return createExemplar();
 			case ModelPackage.USUARIO: return createUsuario();
 			case ModelPackage.ALUNO: return createAluno();
 			case ModelPackage.PROFESSOR: return createProfessor();
 			case ModelPackage.FUNCIONARIO: return createFuncionario();
+			case ModelPackage.TERMINAL: return createTerminal();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -72,9 +73,9 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Terminal createTerminal() {
-		TerminalImpl terminal = new TerminalImpl();
-		return terminal;
+	public Biblioteca createBiblioteca() {
+		BibliotecaImpl biblioteca = new BibliotecaImpl();
+		return biblioteca;
 	}
 
 	/**
@@ -125,6 +126,16 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	public Funcionario createFuncionario() {
 		FuncionarioImpl funcionario = new FuncionarioImpl();
 		return funcionario;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Terminal createTerminal() {
+		TerminalImpl terminal = new TerminalImpl();
+		return terminal;
 	}
 
 	/**

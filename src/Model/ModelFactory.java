@@ -22,13 +22,13 @@ public interface ModelFactory extends EFactory {
 	ModelFactory eINSTANCE = Model.impl.ModelFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Terminal</em>'.
+	 * Returns a new object of class '<em>Biblioteca</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Terminal</em>'.
+	 * @return a new object of class '<em>Biblioteca</em>'.
 	 * @generated
 	 */
-	Terminal createTerminal();
+	Biblioteca createBiblioteca();
 
 	/**
 	 * Returns a new object of class '<em>Exemplar</em>'.
@@ -74,6 +74,15 @@ public interface ModelFactory extends EFactory {
 	 * @generated
 	 */
 	Funcionario createFuncionario();
+
+	/**
+	 * Returns a new object of class '<em>Terminal</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Terminal</em>'.
+	 * @generated
+	 */
+	Terminal createTerminal();
 
 	/**
 	 * Returns the package supported by this factory.
